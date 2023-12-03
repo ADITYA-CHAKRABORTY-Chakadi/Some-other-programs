@@ -1,0 +1,38 @@
+<html>
+<title>Calculator</title>
+<head>
+<style>
+.div1{text-align:center;
+padding:50px;
+bacground-color:green;
+color:white;
+border-width:20px;
+}
+</style>
+</head>
+<body>
+<div class="div1"><h1>Calculator</h1></div>
+<h1 align="center"><script>
+var ans=parseFloat(prompt("enter first operand"));
+var operator=prompt("enter operator:+ - x /");
+var ans2=parseFloat(prompt("enter number"));
+var response;
+switch (operator){
+case"+":
+response=ans+ans2;
+break;
+case "-":
+response=ans-ans2;
+break;
+case "x":
+response=ans*ans2;
+break;
+ case "/":
+response=ans/ans2;
+break;
+default:
+document.write("wrong operator")}
+document.write(response);
+</script></h1>
+</body>
+</html>
